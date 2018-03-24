@@ -1,1 +1,26 @@
- 
+.box-one {
+	background: pink;
+	height: 30px;
+ 	width: 50px;
+ 	margin: 0 0 10px 0;
+ 	z-index: -1;
+}
+
+.box-two {
+	background: red;
+	height: 30px;
+ 	width: 50px;
+ 	z-index: -1;
+}
+
+.finish-line {
+	position: absolute;
+	top: 80px;
+	right: 5px;
+	display: inline;
+	float: right;
+	background: black;
+	height: 70px;
+	width: 10px;
+}
+
