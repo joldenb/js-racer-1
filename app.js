@@ -16,6 +16,9 @@ const goatsGo = (event) => {
 		carOneLeft += 10;
 	//selecting the carOne object and apply style.left allows carOneLeft to concatenate the 10px from previous line	and move 10px away from the left
 		carOne.style.left = carOneLeft + "px";
+			//if statement that stops carOneLeft at 900px in the field div and alerts that is has won 
+			if (carOneLeft >= 900) 
+			alert("White goat for the win!"); 
 	}
 	//creating an if statement to detect which key is being pushed down with the event.keyCode
 	//event.keyCode references to the 'q' key being pressed
@@ -24,9 +27,11 @@ const goatsGo = (event) => {
 		carTwoLeft += 10;
 	//selecting the carTwo object and apply style.left allows carTwoLeft to concatenate the 10px from previous line	and move 10px away from the left
 		carTwo.style.left = carTwoLeft + "px";
+		if (carTwoLeft >= 900) 
+			alert("Black goat for the win!"); 
 	}
 };
-//Calling the carOneMove function everytime the right arrow key is pressed down
+//Calling the goatsGo function everytime the right arrow key and 'q' key is pressed down
 document.onkeydown = goatsGo;
 
 
@@ -41,40 +46,3 @@ document.onkeydown = goatsGo;
 
 
 
-/*
-
-//These are other things that I tried that I am not sure if I want to get rid of yet
-
-//Copy of second function
-const carTwoMove = (event) => {
-
-	//creating an if statement to detect which key is being pushed down with the event.keyCode
-	//event.keyCode references to the 'q' key being pressed
-	if (event.keyCode === 81) {
-	//taking initial value of carTwoLeft at 0 and adding 10px 
-		carTwoLeft += 10;
-	//selecting the carTwo object and apply style.left allows carTwoLeft to concatenate the 10px from previous line	and move 10px away from the left
-		carTwo.style.left = carTwoLeft + "px";
-	}
-};
-//Calling the carTwoMove function everytime the 'q' key is pressed down
-document.onkeydown = carTwoMove;
-
-
-window.addEventListener('keydown', checkKeyPressed, false);
-
-const checkKeyPressed = (key) => {
-	if (key.keyCode == '75') {
-		alert("The 'k' letter key has been pressed!");
-	}
-};
-
-
-
-//I used this to test that I selected element correctly
-carOne.addEventListener('click', () => {
-	alert("shit was clicked");
-})
-
-
-*/
