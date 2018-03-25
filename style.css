@@ -4,6 +4,8 @@
  	width: 50px;
  	margin: 0 0 10px 0;
  	z-index: -1;
+ 	left: 0;
+ 	position: relative;
 }
 
 #box-two {
@@ -11,6 +13,8 @@
 	height: 30px;
  	width: 50px;
  	z-index: -1;
+ 	left: 0;
+ 	position: relative;
 }
 
 #finish-line {
