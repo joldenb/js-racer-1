@@ -1,32 +1,10 @@
-#box-one {
-	height: 100px;
- 	width: 100px;
- 	margin: 550px 0 10px 0;
- 	z-index: -1;
- 	left: 0;
- 	position: relative;
+html {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
-
-#box-two {
-	height: 100px;
- 	width: 100px;
- 	z-index: -1;
- 	left: 0;
- 	position: relative;
-}
-
-#finish-line {
-	position: absolute;
-	top: 80px;
-	right: 5px;
-	display: inline;
-	float: right;
-	background: black;
-	height: 70px;
-	width: 10px;
-	margin: 528px 0 0 0;
-}
-
 h1 {
 	text-align: center;
 }
@@ -35,3 +13,45 @@ body {
 	background: url(images/flatirons.jpg);
 	background-size: cover;
 }
+
+#field {
+	margin: 0 auto;
+	height: 200px;
+	width: 1000px;
+	position: absolute;
+	bottom: 30px;
+	left: 140px;
+	border: 2px black solid;
+
+}
+
+#box-one {
+	height: 100px;
+ 	width: 100px;
+ 	left: 0;
+ 	position: relative;
+ 	display: block;
+}
+
+#box-two {
+	height: 100px;
+ 	width: 100px;
+ 	margin: 10px 0;
+ 	left: 0;
+ 	position: relative;
+ 	display: block;
+}
+
+#finish-line {
+	position: absolute;
+	bottom: 0;
+	left: 1000px;
+	display: block;
+	float: right;
+	background: black;
+	height: 200px;
+	width: 10px;
+}
+
+
+
