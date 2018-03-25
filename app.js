@@ -6,6 +6,7 @@ let carTwo = document.getElementById('box-two');
 let carOneLeft = 0;
 let carTwoLeft = 0;
 
+
 const carOneMove = (event) => {
 
 	//creating an if statement to detect which key is being pushed down with the event.keyCode
@@ -19,7 +20,9 @@ const carOneMove = (event) => {
 };
 //Calling the carOneMove function everytime the right arrow key is pressed down
 document.onkeydown = carOneMove;
+carOneMove();
 
+/*
 const carTwoMove = (event) => {
 
 	//creating an if statement to detect which key is being pushed down with the event.keyCode
@@ -33,8 +36,20 @@ const carTwoMove = (event) => {
 };
 //Calling the carTwoMove function everytime the 'q' key is pressed down
 document.onkeydown = carTwoMove;
+carTwoMove();
+
+*/
+
+
+
+
+
+
+
 
 /*
+
+//These are other things that I tried that I am not sure if I want to get rid of yet
 
 window.addEventListener('keydown', checkKeyPressed, false);
 
@@ -45,8 +60,6 @@ const checkKeyPressed = (key) => {
 };
 
 
-	
-//These are other things that I tried that I am still trying to work on
 
 //I used this to test that I selected element correctly
 carOne.addEventListener('click', () => {
