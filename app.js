@@ -15,7 +15,7 @@ const goatsGo = (event) => {
 	//taking initial value of goatOneStart at 0 and adding 10px 
 		goatOneStart += 20;
 	//selecting the goatOne object and apply style.left allows goatOneStart to concatenate the 10px from previous line	and move 10px away from the left
-		goatOne.style.left = goatOneStart + "px";
+		goatOne.style.marginLeft = goatOneStart + "px";
 			//if statement that stops goatOneStart at 900px in the field div and alerts that is has won 
 			if (goatOneStart >= 900) 
 			alert("White goat for the win!"); 
@@ -26,7 +26,7 @@ const goatsGo = (event) => {
 	//taking initial value of goatTwoStart at 0 and adding 10px 
 		goatTwoStart += 20;
 	//selecting the goatTwo object and apply style.left allows goatTwoStart to concatenate the 10px from previous line	and move 10px away from the left
-		goatTwo.style.left = goatTwoStart + "px";
+		goatTwo.style.marginLeft = goatTwoStart + "px";
 		if (goatTwoStart >= 900) 
 			alert("Black goat for the win!"); 
 	} else {
